@@ -3,7 +3,7 @@ function generatePassword() {
   console.log("Button has been clicked!");
 
   // 1a. Prompt the user for password criteria
-  // 1b. password length between 8 < 128
+  // 1b. password length between 8 - 128
   var passwordLength = parseInt(window.prompt("What length do you want your password to be? (Between 8 and 128)"));
 
   if (passwordLength < 8 || passwordLength > 128 || isNaN(passwordLength)) {
@@ -11,7 +11,7 @@ function generatePassword() {
     return;
   }
 
-  // b. lowercase, uppercase, numeric, special characters
+  // 1c. lowercase, uppercase, numeric, special characters
   var lowercase = window.confirm("Do you want lowercase letters in your password?");
   var uppercase = window.confirm("Do you want uppercase letters in your password?");
   var numbers = window.confirm("Do you want numbers in your password?");
